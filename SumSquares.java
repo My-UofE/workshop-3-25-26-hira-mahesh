@@ -21,9 +21,10 @@ public class SumSquares {
         System.out.print("Please enter the end value: ");
         int temp =0;
         int endNum = in.nextInt();
-        for (int i = startNum ; i < endNum+1; ++i) {
+        int i = startNum;
+        while (i < endNum+1) {
             temp = temp +(i*i);
-    
+            i++;
         }
         System.out.println("Sum of squares from " + startNum + " to " + endNum+ ":");
         System.out.println(temp);
